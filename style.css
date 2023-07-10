@@ -1,0 +1,124 @@
+
+.header-menu{
+    background-color: aqua;
+}
+.header-menu ul{
+    text-align: center;
+    list-style: none;
+}
+.header-menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.header-menu ul li a{
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    border-right: 1px solid black;
+    transition: .4s;
+}
+.header-menu ul li:first-child a{
+    border-left: 1px solid black;
+}
+.header-menu ul li a:hover{
+    background-color: bisque;
+    color: red;
+}
+.header-menu ul li{
+    position: relative;
+}
+.header-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #ddd;
+    width: 200px;
+}
+.header-menu ul li ul li{
+    display: block;
+    border: none;
+    border-left: 0;
+}
+
+
+
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+    margin: 10px 0;
+}
+.header-menu{
+    background-color: aquamarine;
+}
+.header-menu ul{ 
+    text-align: center;
+    
+}
+.header-menu ul li{
+    display: inline-block;
+    border-right: 1px solid red;
+    margin-left: -4px;
+   
+}
+.header-menu ul li:first-child a{
+    border-left: 1px solid red;
+}
+
+.header-menu ul li a{
+    text-decoration: none;
+    color:black;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 20px;
+    transition: .4s;
+  
+}
+.header-menu ul li:hover >a{
+    background-color: bisque;
+}
+.header-menu ul li a:hover{
+    background-color: bisque;
+    color: red;
+}
+.header-menu ul li{
+    position: relative;
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.header-menu ul li ul{
+    position: absolute;
+    background-color: #ddd;
+    left: 0;
+    top: 100%;
+    border-top: 1px solid #fc0909;
+    opacity: 0;
+    transition: .4s;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+    width: 200px;
+    
+  
+}
+.header-menu ul li ul li{
+   display: block;
+   border: none;
+   margin-left: 0;
+   
+   
+}
+.header-menu ul ul li:first-child a{
+    border-left: none;
+}
+.header-menu ul li ul li a{
+    display: block;
+    border:none;
+    border-bottom: 1px solid #f20909;
+}
+.header-menu ul li ul li a:hover{} 
